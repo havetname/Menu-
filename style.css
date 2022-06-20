@@ -1,0 +1,53 @@
+header {
+    margin-top: 200px;
+}
+.menu *{
+    margin: 0;
+    padding: 0;
+}
+.menu ul,.menu ol{
+    list-style: none;
+}
+.menu > ul{
+      display: flex;
+    justify-content: center;
+}
+.menu > ul li a{
+    max-width: 200px;
+    display: block;
+    background: #ececed;
+    padding: 15px 20px 15px 40px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.menu > ul li{
+    position: relative;
+    border-right: 1px solid #000000;
+}
+.menu > ul li:first-child{
+    border-left:1px solid #000000 ;
+}
+/*sub menu*/
+.menu  li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.menu li > ul li{
+    border:1px solid #000000 ;
+}
+.menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+.menu li > ul li ul{
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+.menu li:hover > ul {
+    display: block;
+}
